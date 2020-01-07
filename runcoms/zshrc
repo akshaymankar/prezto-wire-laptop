@@ -11,3 +11,6 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
 fi
 
 # Customize to your needs...
+
+alias xcopy='xclip -selection clipboard'
+alias xpaste='xclip -selection clipboard -o'
