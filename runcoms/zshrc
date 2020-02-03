@@ -6,6 +6,7 @@
 #
 
 # Source Prezto.
+export TERM="xterm-256color"
 if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
   source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
 fi
@@ -16,3 +17,11 @@ alias xcopy='xclip -selection clipboard'
 alias xpaste='xclip -selection clipboard -o'
 
 export EDITOR=vim
+
+export PATH="$HOME/.local/bin:/opt/ghc/bin:$PATH"
+
+autoload -Uz promptinit
+promptinit
+prompt nicoulaj
+zstyle ':prezto:load' pmodule
+if [ -e /home/axeman/.nix-profile/etc/profile.d/nix.sh ]; then . /home/axeman/.nix-profile/etc/profile.d/nix.sh; fi # added by Nix installer
