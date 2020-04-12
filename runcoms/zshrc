@@ -25,3 +25,6 @@ promptinit
 prompt nicoulaj
 zstyle ':prezto:load' pmodule
 if [ -e /home/axeman/.nix-profile/etc/profile.d/nix.sh ]; then . /home/axeman/.nix-profile/etc/profile.d/nix.sh; fi # added by Nix installer
+source /home/axeman/.bash_ansible
+source <(kubectl completion zsh)
+source <(helm completion zsh)
